@@ -70,13 +70,13 @@ ul.benefits li{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;f
     <span class="kicker">FREE LEAD EVENT CALENDAR</span>
     <h1>How to Get 200+ Leads a Month - Without cold calling or internet leads (even if you are a growing agency)</h1>
     <p class="sub">Tell us your city and we'll send you a ranked list of nearby events where your future clients already gather, so you can build a pipeline of high-intent leads and bind more business like other agents already are.</p>
-    <form class="form" onsubmit="return false">
+    <form class="form" method="POST" action="https://formspree.io/f/mlgqglbn">
       <label>First Name</label>
-      <input type="text" placeholder="Your first name">
+      <input type="text" name="first_name" placeholder="Your first name" required>
       <label>Email Address</label>
-      <input type="email" placeholder="you@email.com">
+      <input type="email" name="email" placeholder="you@email.com" required>
       <label>City or ZIP Code</label>
-      <input type="text" placeholder="Where do you work? (city or zip)">
+      <input type="text" name="city_or_zip" placeholder="Where do you work? (city or zip)" required>
       <button class="btn" style="width:100%">Send Me My Free Event Calendar →<span class="btn-sub">100% free. Built for your zip code. No credit card.</span></button>
     </form>
   </div>
