@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Class — The 3-Event Agent Blueprint</title>
+<meta name="description" content="Join the free class: how the top-producing agents use group momentum and a proven 3-event system to build a predictable insurance pipeline in 90 days.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#CC8A1E;--accent2:#F0C161;--ink:#11151c;--bg:#f6f7f9;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:18px}
+img{max-width:100%;display:block}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.bar{background:var(--ink);color:#fff;text-align:center;padding:11px;font-size:14px;letter-spacing:.3px}
+.hero{background:linear-gradient(160deg,#10141b,#1d2735);color:#fff;padding:64px 0 70px;text-align:center}
+.kicker{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#fff;padding:7px 16px;border-radius:50px;font-size:13px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:22px}
+h1{font-size:clamp(28px,4.5vw,48px);line-height:1.12;font-weight:800;letter-spacing:-.5px}
+h1 .hl{color:var(--accent2)}
+.sub{font-size:clamp(17px,2.2vw,22px);opacity:.92;margin-top:18px;font-weight:400}
+.section{padding:54px 0}
+.section.alt{background:#fff}
+h2{font-size:clamp(24px,3.5vw,36px);font-weight:800;line-height:1.18;margin-bottom:20px;letter-spacing:-.3px}
+h3{font-size:20px;font-weight:700;margin:24px 0 10px}
+p{margin-bottom:16px}
+.lead{font-size:20px;font-weight:500}
+.btn{display:inline-block;background:linear-gradient(180deg,var(--accent2),var(--accent));color:#fff;font-weight:800;font-size:20px;text-decoration:none;padding:20px 44px;border-radius:14px;box-shadow:0 12px 30px -8px rgba(204,138,30,.5);transition:transform .15s,box-shadow .15s;border:none;cursor:pointer;text-align:center;width:100%}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 38px -8px rgba(204,138,30,.7)}
+.btn-sub{display:block;font-size:13px;font-weight:500;opacity:.85;margin-top:6px}
+.cta-wrap{text-align:center;margin:30px 0}
+.reg-box{background:#fff;border-radius:20px;padding:34px;box-shadow:0 24px 60px -20px rgba(0,0,0,.2);margin:30px 0}
+.reg-box label{display:block;font-size:13px;font-weight:700;color:#555;margin-bottom:6px;text-transform:uppercase;letter-spacing:.4px}
+.reg-box input{width:100%;padding:14px 16px;font-size:16px;border:1.5px solid #d9dee6;border-radius:10px;margin-bottom:16px;font-family:inherit;color:var(--ink)}
+.reg-box input:focus{outline:none;border-color:var(--accent)}
+ul.benefits{list-style:none;margin:22px 0}
+ul.benefits li{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:18px}
+.chk{color:var(--accent);font-weight:900;flex:none;font-size:19px;line-height:1.4}
+.testi{background:#fff;border-left:4px solid var(--accent);border-radius:0 12px 12px 0;padding:20px 24px;margin:18px 0;box-shadow:0 8px 24px -16px rgba(0,0,0,.3)}
+.testi .who{font-weight:700;margin-top:10px;font-size:15px;color:#555}
+.what-box{background:#fff;border:1.5px solid #e7eaef;border-radius:18px;padding:28px;margin:22px 0}
+.urgency{background:#fff0ec;border:1px solid #ffc9bb;color:#b4310f;border-radius:12px;padding:14px 18px;text-align:center;font-weight:700;margin:22px auto;max-width:520px}
+.footer{background:#0c0f14;color:#9aa3af;text-align:center;padding:36px 22px;font-size:13px;line-height:1.8}
+.footer a{color:#c7cdd6}
+.center{text-align:center}
+@media(max-width:560px){.hero{padding:44px 0 50px}.section{padding:40px 0}.btn{font-size:18px;padding:18px}}
+</style>
+</head>
+<body>
+
+<div class="bar">FREE CLASS — No cost, no commitment, no credit card.</div>
+
+<section class="hero"><div class="wrap">
+  <span class="kicker">Free Class — Limited Seats</span>
+  <h1>The <span class="hl">3-Event Agent Blueprint</span>: How to Build a Predictable Pipeline in 90 Days</h1>
+  <p class="sub">Join this free class and see exactly how the top-producing agents use group momentum and a proven 3-event framework to scale faster than any solo approach can.</p>
+</div></section>
+
+<div class="section alt"><div class="wrap">
+  <div class="reg-box">
+    <h2 class="center">Reserve Your Free Seat</h2>
+    <p class="center" style="color:#7a8290;font-size:16px;margin-bottom:24px">This class runs live and replays are not always available. Register now to hold your spot.</p>
+    <form id="regForm" onsubmit="handleReg(event)">
+      <label>First Name</label>
+      <input type="text" name="first_name" placeholder="Jane" required>
+      <label>Email Address</label>
+      <input type="email" name="email" placeholder="jane@example.com" required>
+      <label>Phone (optional — for text reminders)</label>
+      <input type="tel" name="phone" placeholder="(555) 000-0000">
+      <button class="btn" type="submit" id="submitBtn">Yes, Save My Seat →<span class="btn-sub">Free class · No credit card · Instant confirmation</span></button>
+    </form>
+  </div>
+</div></div>
+
+<div class="section"><div class="wrap">
+  <h2>What You'll Learn in This Free Class</h2>
+  <ul class="benefits">
+    <li><span class="chk">1</span><span><strong>The 3-Event Framework</strong> — How to sequence three specific event types to build momentum, warm your market, and hit a full pipeline within a quarter.</span></li>
+    <li><span class="chk">2</span><span><strong>Group Amplification</strong> — How agents inside a coaching cohort compound results by sharing scripts, debrief notes, and event opportunities — and why solo agents plateau while groups keep scaling.</span></li>
+    <li><span class="chk">3</span><span><strong>The Accountability System</strong> — The specific weekly review process that keeps agents consistent — even when motivation dips — and how to install it for yourself.</span></li>
+  </ul>
+
+  <div class="what-box">
+    <h3 style="margin-top:0">This Class Is for You If:</h3>
+    <ul class="benefits">
+      <li><span class="chk">✓</span><span>You've already got the system and want to accelerate your results</span></li>
+      <li><span class="chk">✓</span><span>You want to see how top agents are actually running events right now</span></li>
+      <li><span class="chk">✓</span><span>You're open to doing this with a group of driven agents, not alone</span></li>
+      <li><span class="chk">✓</span><span>You want a clear 90-day roadmap, not just inspiration</span></li>
+    </ul>
+  </div>
+
+  <div class="urgency">⏳ Seats fill up fast — register now to hold yours.</div>
+  <div class="cta-wrap"><a class="btn" href="3-producerpath-3-gro-confirm.html">Save My Free Seat →<span class="btn-sub">Instant confirmation · Free to attend</span></a></div>
+</div></div>
+
+<div class="section alt"><div class="wrap">
+  <h2 class="center">What Agents Say About the Coaching Program</h2>
+  <div class="testi"><p style="margin-bottom:0">"Being in a group of agents all running events changed everything. When someone shares a script tweak that doubled their close rate, we all benefit. It's the best investment I've made in my agency."</p><div class="who">— A. Brennan · Allstate Agent, ID</div></div>
+  <div class="testi"><p style="margin-bottom:0">"I didn't think I needed group coaching. I was wrong. The accountability alone paid for itself in the first month. I ran 4 events and booked 38 appointments because I knew I had to report back to the group."</p><div class="who">— C. Yamamoto · Independent Agent, OR</div></div>
+</div></div>
+
+<footer class="footer"><div class="wrap">
+  <p><strong>ProducerPath</strong></p>
+  <p>© 2026 ProducerPath. All Rights Reserved.</p>
+  <p><a href="#">Privacy Policy</a> · <a href="#">Terms</a> · <a href="#">Contact</a></p>
+</div></footer>
+
+<script>
+function handleReg(e) {
+  e.preventDefault();
+  var btn = document.getElementById('submitBtn');
+  btn.textContent = 'Registering...';
+  btn.disabled = true;
+  setTimeout(function() {
+    window.location.href = '3-producerpath-3-gro-confirm.html';
+  }, 800);
+}
+</script>
+</body>
+</html>

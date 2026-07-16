@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Community Event Lead System — Turn Local Events Into a Predictable Pipeline</title>
+<meta name="description" content="The complete plug-and-play system for insurance agents: scripts, templates, event scoring, and a step-by-step workflow to go from booth to booked.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--accent:#CC8A1E;--accent2:#F0C161;--ink:#11151c;--bg:#f6f7f9;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:18px}
+img{max-width:100%;display:block}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+.bar{background:var(--ink);color:#fff;text-align:center;padding:11px;font-size:14px;letter-spacing:.3px}
+.hero{background:linear-gradient(160deg,#10141b,#1d2735);color:#fff;padding:64px 0 70px;text-align:center}
+.kicker{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#fff;padding:7px 16px;border-radius:50px;font-size:13px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:22px}
+h1{font-size:clamp(30px,5vw,50px);line-height:1.12;font-weight:800;letter-spacing:-.5px}
+h1 .hl{color:var(--accent2)}
+.sub{font-size:clamp(18px,2.4vw,23px);opacity:.92;margin-top:20px;font-weight:400}
+.section{padding:54px 0}
+.section.alt{background:#fff}
+h2{font-size:clamp(25px,3.6vw,36px);font-weight:800;line-height:1.18;margin-bottom:20px;letter-spacing:-.3px}
+h3{font-size:22px;font-weight:700;margin:26px 0 10px}
+p{margin-bottom:18px}
+.lead{font-size:20px;font-weight:500}
+.btn{display:inline-block;background:linear-gradient(180deg,var(--accent2),var(--accent));color:#fff;font-weight:800;font-size:21px;text-decoration:none;padding:20px 44px;border-radius:14px;box-shadow:0 12px 30px -8px rgba(204,138,30,.5);transition:transform .15s,box-shadow .15s;border:none;cursor:pointer;text-align:center}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 38px -8px rgba(204,138,30,.7)}
+.btn-sub{display:block;font-size:13px;font-weight:500;opacity:.85;margin-top:6px}
+.cta-wrap{text-align:center;margin:34px 0}
+ul.benefits{list-style:none;margin:22px 0}
+ul.benefits li{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:18px}
+.chk{color:var(--accent);font-weight:900;flex:none;font-size:19px;line-height:1.4}
+.card{background:#fff;border:1px solid #e7eaef;border-radius:18px;padding:30px;box-shadow:0 14px 40px -22px rgba(0,0,0,.25);margin:22px 0}
+.stack{background:#fff;border:2px dashed var(--accent);border-radius:18px;padding:8px 28px;margin:26px 0}
+.stack .row{display:flex;justify-content:space-between;gap:14px;padding:16px 0;border-bottom:1px dashed #e0e4ea}
+.stack .row:last-child{border-bottom:none}
+.stack .row .v{font-weight:700;white-space:nowrap;color:#7a8290}
+.stack .total{display:flex;justify-content:space-between;font-size:21px;font-weight:800;padding:18px 0}
+.price{text-align:center;margin:8px 0 4px}
+.price .was{color:#9aa1ac;text-decoration:line-through;font-size:21px}
+.price .now{font-size:52px;font-weight:900;color:var(--accent);line-height:1}
+.guarantee{background:#fff7ef;border:1.5px solid var(--accent2);border-radius:18px;padding:28px;display:flex;gap:18px;align-items:flex-start;margin:26px 0}
+.guarantee .seal{font-size:46px;flex:none}
+.urgency{background:#fff0ec;border:1px solid #ffc9bb;color:#b4310f;border-radius:12px;padding:14px 18px;text-align:center;font-weight:700;margin:22px auto;max-width:520px}
+.testi{background:#fff;border-left:4px solid var(--accent);border-radius:0 12px 12px 0;padding:20px 24px;margin:18px 0;box-shadow:0 8px 24px -16px rgba(0,0,0,.3)}
+.testi .who{font-weight:700;margin-top:10px;font-size:15px;color:#555}
+.faq{border-bottom:1px solid #e7eaef;padding:18px 0}
+.faq .q{font-weight:700;font-size:18px}
+.faq .a{margin-top:8px;color:#444}
+.steps{display:grid;gap:16px;margin:22px 0}
+.step{display:flex;gap:16px;align-items:flex-start}
+.step .n{flex:none;width:40px;height:40px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.footer{background:#0c0f14;color:#9aa3af;text-align:center;padding:40px 22px;font-size:13px;line-height:1.8}
+.footer a{color:#c7cdd6}
+.center{text-align:center}
+.muted{color:#7a8290;font-size:15px}
+@media(max-width:560px){.hero{padding:44px 0 50px}.section{padding:40px 0}.btn{width:100%;font-size:19px;padding:18px}}
+</style>
+</head>
+<body>
+
+<div class="bar">For insurance agents ready to stop buying leads and start generating them.</div>
+
+<section class="hero"><div class="wrap">
+  <span class="kicker">The Community Event Lead System</span>
+  <h1>Turn Local Events Into a <span class="hl">Predictable Pipeline</span> of Insurance Clients</h1>
+  <p class="sub">The complete plug-and-play playbook used by top-producing agents to book appointments at community events — without scripts that feel salesy or booths that feel awkward.</p>
+  <div class="cta-wrap"><a class="btn" href="2-producerpath-2-the-order.html">Get Instant Access — $997<span class="btn-sub">One-time payment. Lifetime access. 30-day guarantee.</span></a></div>
+</div></section>
+
+<div class="section alt"><div class="wrap">
+  <h2>What You Get Inside the System</h2>
+  <div class="stack">
+    <div class="row"><span>The Event Scoring Formula — rank events before you spend a dollar</span><span class="v">$197</span></div>
+    <div class="row"><span>The Booth-to-Booked Script Library — word-for-word conversations</span><span class="v">$297</span></div>
+    <div class="row"><span>Follow-Up Sequence Templates — emails, texts, and voicemails</span><span class="v">$197</span></div>
+    <div class="row"><span>The 90-Day Event Calendar Builder — your full pipeline plan</span><span class="v">$147</span></div>
+    <div class="row"><span>ROI Tracker Spreadsheet — know your cost-per-lead at every event</span><span class="v">$97</span></div>
+    <div class="row"><span>Booth Setup Checklist + Supply Guide — never forget a thing</span><span class="v">$47</span></div>
+    <div class="total"><span>Total Value</span><span>$982</span></div>
+  </div>
+  <div class="price"><div class="was">$982</div><div class="now">$997</div><div style="color:#7a8290;font-size:15px;margin-top:6px">One-time payment — no subscription</div></div>
+  <div class="cta-wrap"><a class="btn" href="2-producerpath-2-the-order.html">Yes, I Want the Full System →<span class="btn-sub">Instant digital access. 30-day money-back guarantee.</span></a></div>
+</div></div>
+
+<div class="section"><div class="wrap">
+  <h2>Everything You Need to Run Events That Actually Convert</h2>
+  <ul class="benefits">
+    <li><span class="chk">✓</span><span><strong>Event Scoring Formula</strong> — Score any event on 6 factors before you sign up, so you only commit to booths with real ROI potential.</span></li>
+    <li><span class="chk">✓</span><span><strong>Conversation Scripts</strong> — Word-for-word openers, objection handles, and appointment-setters that feel natural, not pushy.</span></li>
+    <li><span class="chk">✓</span><span><strong>Follow-Up Sequences</strong> — A done-for-you 7-touch follow-up series (email + text) that converts cold contacts into warm appointments.</span></li>
+    <li><span class="chk">✓</span><span><strong>90-Day Calendar Builder</strong> — Map out an entire quarter of events in one sitting, with a cadence that keeps your pipeline full without burning out.</span></li>
+    <li><span class="chk">✓</span><span><strong>ROI Tracker</strong> — Know your cost-per-lead, cost-per-appointment, and revenue per event — so you double down on what works.</span></li>
+    <li><span class="chk">✓</span><span><strong>Booth Setup Checklist</strong> — Every supply, every setup step, every detail — so your first event runs as smoothly as your tenth.</span></li>
+  </ul>
+</div></div>
+
+<div class="section alt"><div class="wrap">
+  <h2 class="center">What Agents Are Saying</h2>
+  <div class="testi"><p style="margin-bottom:0">"I booked 14 appointments at my very first community event using the scripts. I used to spend $800/month on internet leads. Now I spend $120 on a booth and walk away with more appointments than I ever got from leads." </p><div class="who">— M. Hartley · State Farm Agent, AZ</div></div>
+  <div class="testi"><p style="margin-bottom:0">"The event scoring formula alone saved me from wasting $400 on a booth at the wrong event. Within 60 days I had my calendar locked for the whole quarter and my pipeline was the fullest it's ever been."</p><div class="who">— D. Nguyen · Independent Agent, TX</div></div>
+  <div class="testi"><p style="margin-bottom:0">"I was skeptical. I'm a numbers guy. But after running the ROI tracker through my first three events, I realized I was getting leads at 1/10th the cost of Datalot. I'm never going back."</p><div class="who">— K. Rivera · Farmers Agent, UT</div></div>
+</div></div>
+
+<div class="section"><div class="wrap">
+  <div class="guarantee">
+    <div class="seal">🛡️</div>
+    <div>
+      <h3 style="margin-top:0">30-Day Money-Back Guarantee</h3>
+      <p style="margin-bottom:0">Run the system for 30 days. If you don't see results — or if it just isn't for you — email us and we'll refund every penny. No questions, no hoops, no hassle.</p>
+    </div>
+  </div>
+  <div class="urgency">⏳ Founding Member Pricing — $997 locked in for life. Price increases when this window closes.</div>
+  <div class="cta-wrap"><a class="btn" href="2-producerpath-2-the-order.html">Get Instant Access — $997 →<span class="btn-sub">30-day guarantee · Instant digital delivery · One-time payment</span></a></div>
+</div></div>
+
+<div class="section alt"><div class="wrap">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq"><div class="q">What exactly do I get?</div><div class="a">You get immediate digital access to the full Community Event Lead System: the event scoring tool, complete script library, follow-up sequence templates, 90-day calendar builder, ROI tracker spreadsheet, and booth setup checklist. Everything is downloadable and ready to use.</div></div>
+  <div class="faq"><div class="q">Do I need any prior event experience?</div><div class="a">No. The system is designed from the ground up for agents who have never worked a booth. Every step is spelled out — from finding events to what to say when someone walks up to your table.</div></div>
+  <div class="faq"><div class="q">What kind of events does this work for?</div><div class="a">Farmers markets, fairs, festivals, school events, church fairs, sports leagues, HOA events, business expos, community fundraisers — any event where people gather. The event scoring formula helps you identify the best ones in your area.</div></div>
+  <div class="faq"><div class="q">How fast will I see results?</div><div class="a">Most agents book their first event within 2 weeks and attend it within 30 days. Many report booking 8-20 appointments at their first event. Results depend on your market, effort, and event selection.</div></div>
+  <div class="faq"><div class="q">Is there a guarantee?</div><div class="a">Yes. 30 days, full refund, no questions asked. If it doesn't work for you, email us and we'll make it right.</div></div>
+</div></div>
+
+<footer class="footer"><div class="wrap">
+  <p><strong>ProducerPath</strong></p>
+  <p>© 2026 ProducerPath. All Rights Reserved.</p>
+  <p><a href="#">Privacy Policy</a> · <a href="#">Terms</a> · <a href="#">Contact</a></p>
+  <p style="margin-top:14px;max-width:600px;margin-left:auto;margin-right:auto;opacity:.7">ProducerPath is an independent marketing system for insurance professionals and is not affiliated with any carrier. Results vary by market and effort. Testimonials are representative of agent experiences and are not guarantees of outcome.</p>
+</div></footer>
+</body>
+</html>
