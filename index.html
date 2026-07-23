@@ -3,483 +3,102 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Scale Your Insurance Agency Without Cold Calls or Internet Leads | ProducerPath</title>
-<meta name="description" content="Tell us your city and we will send you a free report revealing the highest-converting lead opportunity in your local market. For P&C and life agents ready to build a predictable book without cold calls or shared internet leads.">
-<meta property="og:title" content="Scale Your Insurance Agency Without Cold Calls or Internet Leads | ProducerPath">
-<meta property="og:description" content="Tell us your city and we will send you a free report revealing the highest-converting lead opportunity in your local market, and exactly how to reach those clients before any other agent does.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://producerpathins.com">
-<!-- TODO: Set og:image to your real preview image URL once one exists -->
-<!-- <meta property="og:image" content="https://producerpathins.com/og-preview.jpg"> -->
-
-<!-- TODO: Replace with your analytics snippet (Google Tag Manager, Meta Pixel, etc.)
-     The onFormSubmitted() function fires after every successful opt-in. -->
-
+<title>The Agency Growth Method That Adds $50K+ to Your Book in 12 Months, Without Cold Calling, Buying Internet Leads, or Hiring More Producers</title>
+<meta name="description" content="On a free 30-minute call, we'll build you a custom plan to grow your book with the community-event system a top Utah agency used to become one of the biggest in the state, tailored to your exact market.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
-/* ── BRAND TOKENS (unchanged from existing system) ── */
 :root{--accent:#CC8A1E;--accent2:#F0C161;--ink:#11151c;--bg:#f6f7f9;}
-
-/* ── RESET ── */
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:18px}
+body{font-family:'Inter', system-ui, sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:18px}
 img{max-width:100%;display:block}
-
-/* ── LAYOUT ── */
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-.wrap-sm{max-width:740px;margin:0 auto;padding:0 24px}
-
-/* ── ANNOUNCEMENT BAR ── */
-.bar{background:var(--ink);color:#fff;text-align:center;padding:11px 16px;font-size:14px;letter-spacing:.3px}
-
-/* ── HEADER: logo only, no nav ── */
-.site-header{background:linear-gradient(160deg,#10141b,#1d2735);padding:14px 24px;text-align:center}
-.logo{font-size:21px;font-weight:900;color:var(--accent2);letter-spacing:-.3px}
-
-/* ── HERO ── */
-.hero{background:linear-gradient(160deg,#10141b,#1d2735);color:#fff;padding:56px 0 68px}
-.hero-grid{display:grid;grid-template-columns:1fr 400px;gap:52px;align-items:start}
-.kicker{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#dfe3e8;padding:7px 16px;border-radius:50px;font-size:13px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:20px}
-h1{font-size:clamp(28px,3.8vw,46px);line-height:1.11;font-weight:800;letter-spacing:-.5px}
-.hl{color:var(--accent2)}
-.sub{font-size:clamp(16px,1.9vw,20px);opacity:.87;margin-top:18px;font-weight:400;line-height:1.65}
-
-/* ── FORM CARD ── */
-.form-card{background:#fff;border-radius:18px;padding:28px 26px;box-shadow:0 30px 70px -20px rgba(0,0,0,.5);color:var(--ink)}
-.form-title{font-size:17px;font-weight:800;color:var(--ink);margin-bottom:18px;text-align:center;line-height:1.3}
-.form-card label{font-size:13px;font-weight:600;color:#4a5568;display:block;margin-bottom:5px}
-.form-card input{width:100%;padding:14px 15px;font-size:16px;border:1.5px solid #d9dee6;border-radius:10px;margin-bottom:6px;font-family:inherit;color:var(--ink);background:#fff;transition:border-color .15s,box-shadow .15s}
-.form-card input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(204,138,30,.18)}
-.form-card input.field-err{border-color:#c53030;background:#fff8f8}
-.err-msg{color:#c53030;font-size:12px;font-weight:600;margin-bottom:8px;display:none}
-.err-msg.show{display:block}
-.form-success{display:none;text-align:center;padding:14px 0 6px}
-.form-success .check-icon{font-size:40px;margin-bottom:10px}
-.form-success p{font-size:16px;font-weight:600;color:var(--ink)}
-
-/* ── CTA BUTTON (only gold button on the page) ── */
-.btn{display:block;width:100%;background:linear-gradient(180deg,var(--accent2),var(--accent));color:#fff;font-weight:800;font-size:19px;text-decoration:none;padding:17px 24px;border-radius:12px;box-shadow:0 10px 28px -8px rgba(204,138,30,.6);transition:transform .15s,box-shadow .15s;border:none;cursor:pointer;text-align:center;margin-top:6px;line-height:1.3}
-.btn:hover{transform:translateY(-2px);box-shadow:0 18px 36px -8px rgba(204,138,30,.75)}
-.btn:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
-.btn-sub{display:block;font-size:12px;font-weight:500;opacity:.82;margin-top:5px}
-
-/* Scroll-to-form trigger in middle section (same gold, no width override) */
-.btn-cta-mid{display:inline-block;background:linear-gradient(180deg,var(--accent2),var(--accent));color:#fff;font-weight:800;font-size:19px;text-decoration:none;padding:17px 44px;border-radius:12px;box-shadow:0 10px 28px -8px rgba(204,138,30,.6);transition:transform .15s,box-shadow .15s;border:none;cursor:pointer;text-align:center;line-height:1.3}
-.btn-cta-mid:hover{transform:translateY(-2px);box-shadow:0 18px 36px -8px rgba(204,138,30,.75)}
-.btn-cta-mid:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
-.cta-wrap{text-align:center;margin:30px 0}
-
-/* ── SECTIONS ── */
-.section{padding:60px 0}
+.wrap{max-width:760px;margin:0 auto;padding:0 22px}
+.bar{background:var(--ink);color:#fff;text-align:center;padding:11px;font-size:14px;letter-spacing:.3px}
+.hero{background:linear-gradient(160deg,#10141b,#1d2735);color:#fff;padding:64px 0 70px;text-align:center}
+.hero-img{max-width:720px;margin:28px auto 0;border-radius:18px;box-shadow:0 30px 60px -22px rgba(0,0,0,.6);width:100%}
+.kicker{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);color:#fff;padding:7px 16px;border-radius:50px;font-size:13px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;margin-bottom:22px}
+h1{font-size:clamp(30px,5vw,50px);line-height:1.12;font-weight:800;letter-spacing:-.5px}
+h1 .hl{color:var(--accent2)}
+.sub{font-size:clamp(18px,2.4vw,23px);opacity:.92;margin-top:20px;font-weight:400}
+.section{padding:54px 0}
 .section.alt{background:#fff}
-
-/* ── TYPOGRAPHY ── */
-h2{font-size:clamp(24px,3.2vw,36px);font-weight:800;line-height:1.16;margin-bottom:18px;letter-spacing:-.3px}
-p{margin-bottom:16px}
-.center{text-align:center}
-.muted{color:#7a8290;font-size:15px;line-height:1.6}
-
-/* ── PROOF STRIP ── */
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:18px;box-shadow:0 14px 40px -22px rgba(0,0,0,.18);overflow:hidden;margin-bottom:12px}
-.stat{padding:26px 18px;text-align:center;border-right:1px solid #f0f2f5}
-.stat:last-child{border-right:none}
-.stat .n{font-size:clamp(28px,3.5vw,40px);font-weight:900;color:var(--accent);line-height:1;margin-bottom:6px}
-.stat .l{font-size:14px;color:#7a8290;font-weight:600;line-height:1.4}
-
-/* ── BENEFITS LIST ── */
-ul.benefits{list-style:none;margin:20px 0}
+h2{font-size:clamp(25px,3.6vw,36px);font-weight:800;line-height:1.18;margin-bottom:20px;letter-spacing:-.3px}
+h3{font-size:22px;font-weight:700;margin:26px 0 10px}
+p{margin-bottom:18px}
+.lead{font-size:20px;font-weight:500}
+.btn{display:inline-block;background:linear-gradient(180deg,var(--accent2),var(--accent));color:#fff;font-weight:800;font-size:21px;text-decoration:none;padding:20px 44px;border-radius:14px;box-shadow:0 12px 30px -8px rgba(204,138,30,.6);transition:transform .15s, box-shadow .15s;border:none;cursor:pointer;text-align:center}
+.btn:hover{transform:translateY(-2px);box-shadow:0 18px 38px -8px rgba(204,138,30,.7)}
+.btn-sub{display:block;font-size:13px;font-weight:500;opacity:.85;margin-top:6px}
+.cta-wrap{text-align:center;margin:34px 0}
+.form{background:#fff;border-radius:18px;padding:30px;max-width:430px;margin:30px auto 0;box-shadow:0 30px 60px -20px rgba(0,0,0,.35);text-align:left}
+.form input{width:100%;padding:15px;font-size:16px;border:1.5px solid #d9dee6;border-radius:10px;margin-bottom:14px;font-family:inherit}
+.form label{font-size:13px;font-weight:600;color:#444;display:block;margin-bottom:5px}
+ul.benefits{list-style:none;margin:22px 0}
 ul.benefits li{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:18px}
-.chk{color:var(--accent);font-weight:900;flex:none;font-size:18px;line-height:1.5}
-
-/* ── VALUE STACK TABLE ── */
-.stack-box{background:#fff;border:2px dashed var(--accent);border-radius:18px;padding:4px 24px 0;margin:28px 0}
-.stack-row{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:15px 0;border-bottom:1px dashed #e8ecf0;font-size:16px}
-.stack-row:last-of-type{border-bottom:none}
-.stack-val{font-weight:700;white-space:nowrap;color:#9aa1ac}
-.stack-total{display:flex;justify-content:space-between;align-items:center;font-size:19px;font-weight:800;padding:15px 0}
-.stack-free{font-size:26px;font-weight:900;color:var(--accent)}
-
-/* ── FOUNDER SECTION ── */
-.founder-grid{display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:start;margin-top:28px}
-.founder-photo{width:200px;height:250px;border-radius:14px;object-fit:cover;background:#d4dae3}
-.founder-placeholder{width:200px;height:250px;border-radius:14px;background:#d4dae3;display:flex;align-items:center;justify-content:center;font-size:12px;color:#7a8290;text-align:center;padding:16px;line-height:1.5}
-
-/* ── TESTIMONIALS ── */
-.testi{background:#fff;border-left:4px solid var(--accent);border-radius:0 14px 14px 0;padding:22px 24px;margin:18px 0;box-shadow:0 8px 24px -16px rgba(0,0,0,.22)}
+.chk{color:var(--accent);font-weight:900;flex:none;font-size:19px;line-height:1.4}
+.testi{background:#fff;border-left:4px solid var(--accent);border-radius:0 12px 12px 0;padding:20px 24px;margin:18px 0;box-shadow:0 8px 24px -16px rgba(0,0,0,.3)}
 .testi .who{font-weight:700;margin-top:10px;font-size:15px;color:#555}
-
-/* ── FAQ ── */
-.faq-item{border-bottom:1px solid #e7eaef;padding:20px 0}
-.faq-item:first-of-type{border-top:1px solid #e7eaef;margin-top:8px}
-.faq-q{font-weight:700;font-size:18px;color:var(--ink)}
-.faq-a{margin-top:10px;color:#4a5568;font-size:17px;margin-bottom:0}
-
-/* ── FOOTER ── */
-.footer{background:#0c0f14;color:#9aa3af;text-align:center;padding:42px 22px;font-size:13px;line-height:1.9}
-.footer a{color:#c7cdd6;text-decoration:none}
-.footer a:hover{color:#fff}
-
-/* ── RESPONSIVE ── */
-@media(max-width:800px){
-  .hero-grid{grid-template-columns:1fr;gap:0}
-  .hero{padding:36px 0 48px}
-  /* Hide subhead on mobile so headline + form both fit above fold */
-  .sub{display:none}
-  /* Form sits directly below headline */
-  .hero-form-col{margin-top:28px}
-  .stats-grid{grid-template-columns:repeat(2,1fr)}
-  .stat:nth-child(2){border-right:none}
-  .stat:nth-child(3){border-top:1px solid #f0f2f5}
-  .founder-grid{grid-template-columns:1fr}
-  .founder-photo,.founder-placeholder{width:100%;height:180px}
-  .section{padding:44px 0}
-  .btn-cta-mid{width:100%;display:block;font-size:18px;padding:17px 24px}
-}
-@media(max-width:400px){
-  .wrap,.wrap-sm{padding:0 16px}
-  .form-card{padding:20px 16px}
-}
+.footer{background:#0c0f14;color:#9aa3af;text-align:center;padding:40px 22px;font-size:13px;line-height:1.8}
+.footer a{color:#c7cdd6}
+.center{text-align:center}
+.muted{color:#7a8290;font-size:15px}
+@media(max-width:560px){.hero{padding:44px 0 50px}.section{padding:40px 0}.btn{width:100%;font-size:19px;padding:18px}}
 </style>
 </head>
 <body>
 
-<script>
-/* ── FORM CONFIG: single source of truth for the submit endpoint ── */
-/* TODO: Replace this URL with your ConvertKit, Beehiiv, or Formspree endpoint.
-   This is the only place that needs to change when switching email providers. */
-var FORM_ENDPOINT = 'https://formspree.io/f/mlgqglbn';
+<div class="bar">For insurance agency owners who are done renting leads and ready to own their market.</div>
 
-/* ── CONVERSION TRACKING HOOK ─────────────────────────────────── */
-/* TODO: Add your pixel/event code inside this function.
-   It fires immediately after a successful form submission, before redirect.
-   Examples:
-     GA4:        gtag('event', 'formSubmitted', { event_category: 'lead', event_label: 'event_calendar' });
-     Meta Pixel: fbq('track', 'Lead', { content_name: 'event_calendar_request' });
-     Segment:    analytics.track('Form Submitted', { form: 'event_calendar' }); */
-function onFormSubmitted() {
-  /* your conversion tracking code here */
-}
-</script>
-
-<!-- ─── SECTION 1: ANNOUNCEMENT BAR ─────────────────────── -->
-<div class="bar">For insurance agents who would rather meet people than dial them.</div>
-
-<!-- ─── HEADER: logo only, no navigation ─────────────────── -->
-<header class="site-header" role="banner">
-  <span class="logo" aria-label="ProducerPath">ProducerPath</span>
-</header>
-
-<!-- ─── SECTION 2: HERO ──────────────────────────────────── -->
-<section class="hero" id="top" aria-labelledby="hero-h1">
+<section class="hero">
   <div class="wrap">
-    <div class="hero-grid">
-
-      <div class="hero-copy-col">
-        <span class="kicker">For P&amp;C and life agents who are done buying shared internet leads.</span>
-        <h1 id="hero-h1">We Help Insurance Agents Add <span class="hl">$50K+ to Their Book,</span> Without Cold Calls, Internet Leads, or Any Method They Have Already Tried.</h1>
-        <p class="sub">Tell us your city and we will send you a free report revealing the highest-converting lead opportunity in your local market, and exactly how to reach those clients before any other agent does.</p>
-      </div>
-
-      <div class="hero-form-col">
-        <div class="form-card" id="hero-form-card">
-          <p class="form-title">Get Your Free Local Market Report</p>
-          <div class="form-success" id="fs1" aria-live="polite">
-            <div class="check-icon" aria-hidden="true">✓</div>
-            <p>Check your inbox. Your report is on its way.</p>
-          </div>
-          <div id="ff1">
-            <form onsubmit="handleSubmit(event,1);return false;" novalidate>
-              <label for="h-email">Email Address</label>
-              <input type="email" id="h-email" name="email" placeholder="you@youragency.com" required autocomplete="email">
-              <div class="err-msg" id="h-email-err" role="alert">Please enter a valid email address.</div>
-
-              <label for="h-city">City or ZIP Code</label>
-              <input type="text" id="h-city" name="city_or_zip" placeholder="Where do you work? (city or ZIP)" required autocomplete="postal-code">
-              <div class="err-msg" id="h-city-err" role="alert">Please enter your city or ZIP code.</div>
-
-              <button class="btn" id="btn1" type="submit">
-                Send My Free Market Report
-                <span class="btn-sub">Free. No credit card. Researched for your market.</span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    <span class="kicker">FREE 1-ON-1 STRATEGY CALL</span>
+    <h1>The Agency Growth Method That Adds $50K+ to Your Book in 12 Months, Without Cold Calling, Buying Internet Leads, or Hiring More Producers</h1>
+    <p class="sub">On a free 30-minute call, we'll build you a custom plan to grow your book with the community-event system a top Utah agency used to become one of the biggest in the state, tailored to your exact market.</p>
+    <p style="margin-top:18px;font-weight:700;color:var(--accent2)">📅 30 minutes &nbsp;·&nbsp; A custom revenue plan for your market &nbsp;·&nbsp; Limited spots each week</p>
+    <img class="hero-img" src="https://d8j0ntlcm91z4.cloudfront.net/user_3DasiUHMbAZ6MuwLbCjdczktEP0/hf_20260723_203503_e7f67556-46c3-45ff-8a32-a1600902e4a0.png" alt="Insurance agent at a community event booth talking with a couple" loading="lazy">
+    <form class="form" onsubmit="window.location.href='schedule.html';return false">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" placeholder="Your first name">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="you@email.com">
+      <button class="btn" style="width:100%">Book My Free Strategy Call &rarr;<span class="btn-sub">Free 30-minute call. Limited spots each week.</span></button>
+    </form>
   </div>
 </section>
 
-<!-- ─── SECTION 3: PROOF STRIP ──────────────────────────── -->
-<div class="section alt">
-  <div class="wrap">
-    <div class="stats-grid" role="list" aria-label="ProducerPath results">
-      <div class="stat" role="listitem"><div class="n">150+</div><div class="l">average leads in 30 days</div></div>
-      <div class="stat" role="listitem"><div class="n">2x</div><div class="l">higher close rate vs. internet leads</div></div>
-      <div class="stat" role="listitem"><div class="n">65%</div><div class="l">lower cost per lead</div></div>
-      <div class="stat" role="listitem"><div class="n">50+</div><div class="l">agents enrolled to date</div></div>
-    </div>
-    <p class="muted center">Averages self-reported by ProducerPath agents. Individual results vary by market and effort.</p>
-  </div>
-</div>
+<div class="section alt"><div class="wrap">
+  <h2 class="center">On Your Free Strategy Call, We'll:</h2>
+  <ul class="benefits">
+    <li><span class="chk">1</span><span><strong>Map your market's best opportunities</strong> &mdash; We'll pinpoint the highest-return local opportunities where your dream clients already gather.</span></li>
+    <li><span class="chk">2</span><span><strong>Find your #1 growth bottleneck</strong> &mdash; We'll diagnose exactly what's capping your book and your close ratio right now.</span></li>
+    <li><span class="chk">3</span><span><strong>Build your custom 90-day plan</strong> &mdash; You'll leave with a step-by-step plan to add $50K+ to your book without cold calling.</span></li>
+  </ul>
+  <div class="cta-wrap"><a class="btn" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Book My Free Strategy Call &rarr;</a></div>
+</div></div>
 
-<!-- ─── SECTION 4: NAME THE ENEMY ───────────────────────── -->
-<div class="section">
-  <div class="wrap-sm">
-    <h2>You Already Know How This Goes.</h2>
-    <p>You buy a batch of internet leads. So do five other agents. You dial 100 numbers to get two pickups and one "just send me a quote." You pay more every year for prospects who trust you less.</p>
-    <p>The people who picked up are skeptical before you say a word, because they have been called four times already. The close ratio is low. The retention is worse. And the cost keeps climbing.</p>
-    <p>Cold calling and shared internet leads are not a pipeline problem you can outwork. They are a broken model.</p>
-  </div>
-</div>
+<div class="section"><div class="wrap">
+  <h2>Why I Walked Away From Everything the Industry Told Me About Leads</h2>
+  <p>A few years ago I was at one of the largest Allstate agencies in Utah, and lead generation felt broken. Cold calling was ineffective, burnout was high, and every internet lead we bought was being called by five other agents at the same time. We were paying good money to compete for people who didn't want to hear from any of us.</p>
+  <p>Then a simple thought changed everything. Insurance is a relationship business, so why were we trying to build relationships with total strangers over the phone? The people we wanted were already gathering in our own community, at events happening every weekend.</p>
+  <p>So we tested it. We targeted local events where our dream clients would be, used a few specific strategies to start conversations, and almost immediately saw the fruit of our labor. After one community outreach event, pickup rates, close ratio, and retention all improved.</p>
+  <p>We got obsessed. We searched for more events, refined our scripts, and tightened the system year after year. That agency grew into one of the biggest in the state, all without cold calling. ProducerPath is everything we learned, packaged so you can do the same in your market.</p>
+</div></div>
 
-<!-- ─── SECTION 5: THE NEW OPPORTUNITY ──────────────────── -->
-<div class="section alt">
-  <div class="wrap-sm">
-    <h2>This Is Not a Better Lead Source. It Is a Different Way of Getting Clients Entirely.</h2>
-    <p>Instead of interrupting strangers who do not know you, you meet neighbors face to face, in your own community, before any other agent reaches them.</p>
-    <ul class="benefits">
-      <li><span class="chk" aria-hidden="true">✔</span><span>They meet you in person first. Your face is the one they remember when they are ready to buy.</span></li>
-      <li><span class="chk" aria-hidden="true">✔</span><span>You are the only agent in the room. No one else is dialing the same list.</span></li>
-      <li><span class="chk" aria-hidden="true">✔</span><span>The conversation starts warm instead of cold. You are a neighbor at an event, not an interruption.</span></li>
-    </ul>
-  </div>
-</div>
+<div class="section alt"><div class="wrap">
+  <h2 class="center">What People Are Saying</h2>
+  <!-- TODO: Replace with a real agent testimonial. Include name, agency type, state, and one specific number. -->
+  <div class="testi"><p style="margin-bottom:0">"We stopped buying internet leads and grew faster than we ever did chasing them. (Sample &mdash; replace with a real agency quote.)"</p><div class="who">&mdash; Sample &middot; Agency Owner, UT</div></div>
+</div></div>
 
-<!-- ─── SECTION 6: CALENDAR VALUE + STACK ───────────────── -->
-<div class="section">
-  <div class="wrap-sm">
-    <h2 class="center">What Is Inside Your Free Report</h2>
-    <ul class="benefits">
-      <li><span class="chk" aria-hidden="true">✔</span><span>The single highest-converting lead opportunity in your local market, ranked by volume and client quality</span></li>
-      <li><span class="chk" aria-hidden="true">✔</span><span>Why this opportunity produces clients with higher close rates and better retention than internet leads</span></li>
-      <li><span class="chk" aria-hidden="true">✔</span><span>What your competitors are doing, and why most of them are leaving this opportunity untouched</span></li>
-      <li><span class="chk" aria-hidden="true">✔</span><span>Exactly how to reach those prospects first, without picking up the phone or buying a list</span></li>
-      <li><span class="chk" aria-hidden="true">✔</span><span>The one conversation that converts, so you know what to say before you ever make contact</span></li>
-    </ul>
-
-    <div class="stack-box" role="table" aria-label="What you get with the free report">
-      <div class="stack-row" role="row">
-        <span role="cell">Market opportunity analysis for your ZIP code</span>
-        <span class="stack-val" role="cell">$97 value</span>
-      </div>
-      <div class="stack-row" role="row">
-        <span role="cell">Prospect profile: who they are and what they need</span>
-        <span class="stack-val" role="cell">$47 value</span>
-      </div>
-      <div class="stack-row" role="row">
-        <span role="cell">Competitive landscape: what other agents are missing</span>
-        <span class="stack-val" role="cell">$47 value</span>
-      </div>
-      <div class="stack-row" role="row">
-        <span role="cell">First-contact conversation framework</span>
-        <span class="stack-val" role="cell">$47 value</span>
-      </div>
-      <div class="stack-total" role="row" style="border-top:2px solid #e8ecf0;margin-top:4px">
-        <span role="cell">Total value</span>
-        <span role="cell">$238</span>
-      </div>
-      <div class="stack-total" role="row" style="padding-top:4px;padding-bottom:18px">
-        <span role="cell" style="color:var(--accent)">Your price today</span>
-        <span class="stack-free" role="cell">Free</span>
-      </div>
-    </div>
-
-    <p class="muted">We research each report by hand for your specific market, so we cap new requests at 25 per week. No credit card. No sales call. If the report is not useful, unsubscribe in one click.</p>
-
-    <div class="cta-wrap">
-      <button class="btn-cta-mid" onclick="scrollToForm()" type="button">
-        Send My Free Market Report
-        <span style="display:block;font-size:12px;font-weight:500;opacity:.82;margin-top:5px">Free. No credit card. Researched for your market.</span>
-      </button>
-    </div>
-  </div>
-</div>
-
-<!-- ─── SECTION 7: FOUNDER STORY ─────────────────────────── -->
-<div class="section alt">
-  <div class="wrap-sm">
-    <h2>Why I Built This</h2>
-    <div class="founder-grid">
-      <!-- TODO: Replace this placeholder with a real founder photo.
-           Recommended: professional headshot or candid shot at a community event booth.
-           Ideal size: 400x500px minimum, WebP format, loading="lazy".
-           Replace the <div> below with: <img class="founder-photo" src="founder.webp" alt="[Founder name], founder of ProducerPath" loading="lazy" width="200" height="250"> -->
-      <div class="founder-placeholder" role="img" aria-label="Founder photo placeholder">
-        TODO: Add founder photo
-      </div>
-      <div>
-        <p>I spent years at one of the largest Allstate agencies in Utah. Cold calling was ineffective and burnout was high. Every internet lead we bought was the same lead five other agents were already calling.</p>
-        <p>Insurance is a relationship business, so we stopped chasing strangers and started showing up where our future clients already were. The people who became our best clients had already met us. They trusted us before the conversation ever started.</p>
-        <p>We refined the system over years. That agency became one of the biggest in the state without cold calling. ProducerPath is that system, built for you.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ─── SECTION 8: TESTIMONIALS ──────────────────────────── -->
-<div class="section">
-  <div class="wrap-sm">
-    <h2 class="center">What Agents Are Saying</h2>
-
-    <!-- TODO: Replace the three blocks below with real agent testimonials before publishing.
-         Each needs: a direct quote with one specific number (leads, close rate, cost saved),
-         the agent's name (first name + last initial is fine), agency type, and state.
-         Remove the placeholder <em> text and the HTML comment on each when you swap in real copy. -->
-    <div class="testi">
-      <p style="margin-bottom:0"><em style="color:#9aa1ac"><!-- TODO: Real quote with a specific number, e.g. "47 leads from one weekend at the county fair. I have not bought an internet lead since." --> [Placeholder: insert real agent quote here]</em></p>
-      <div class="who"><!-- TODO: Name, agency type, state --> [Agent Name] · [Agency Type], [State]</div>
-    </div>
-    <div class="testi">
-      <p style="margin-bottom:0"><em style="color:#9aa1ac"><!-- TODO: Real quote with a specific number --> [Placeholder: insert real agent quote here]</em></p>
-      <div class="who"><!-- TODO: Name, agency type, state --> [Agent Name] · [Agency Type], [State]</div>
-    </div>
-    <div class="testi">
-      <p style="margin-bottom:0"><em style="color:#9aa1ac"><!-- TODO: Real quote with a specific number --> [Placeholder: insert real agent quote here]</em></p>
-      <div class="who"><!-- TODO: Name, agency type, state --> [Agent Name] · [Agency Type], [State]</div>
-    </div>
-  </div>
-</div>
-
-<!-- ─── SECTION 9: FAQ ────────────────────────────────────── -->
-<div class="section alt">
-  <div class="wrap-sm">
-    <h2 class="center">Common Questions</h2>
-
-    <div class="faq-item">
-      <p class="faq-q">I am not a natural salesperson. Will this work for me?</p>
-      <p class="faq-a">Most agents who use this system say the same thing, and that is actually an advantage. When you are meeting people in your community on their terms, you are a resource, not a pitch. The system gives you a simple conversation framework that feels like helping, not selling. You collect contact info and follow up when people are ready. Agents who describe themselves as introverts consistently report this as their most comfortable lead channel.</p>
-    </div>
-    <div class="faq-item">
-      <p class="faq-q">How much does this cost to get started, and how much time does it take?</p>
-      <p class="faq-a">Getting started costs far less than most agents expect. The opportunities we identify in your market typically have an entry cost under $400, and most agents commit to one half-day per month to start. Your free report shows you the specific costs and time commitment for the opportunities in your ZIP code, so you can plan your budget before committing to anything.</p>
-    </div>
-    <div class="faq-item">
-      <p class="faq-q">If this works so well, why aren't more agents already doing it?</p>
-      <p class="faq-a">Most agents have only ever been shown two paths: cold calls or internet leads. The opportunities in your report exist in every market. They are not hidden. But because no one in the industry has built a repeatable system around them, most agents have simply never tried. The agents who do consistently report higher close rates, better retention, and a fraction of the cost per lead compared to anything they purchased before. Once you see the report for your market, it will be obvious why the opportunity is still available.</p>
-    </div>
-  </div>
-</div>
-
-<!-- ─── SECTION 10: FINAL CTA ─────────────────────────────── -->
-<div class="section" id="final-cta">
-  <div class="wrap-sm">
-    <h2 class="center">Find Out Where Your Next Ten Clients Are Gathering This Month.</h2>
-    <p class="center muted" style="margin-bottom:28px">Enter your email and city below and we will send your free local market report within one business day.</p>
-    <div class="form-card" style="max-width:440px;margin:0 auto">
-      <p class="form-title">Get Your Free Local Market Report</p>
-      <div class="form-success" id="fs2" aria-live="polite">
-        <div class="check-icon" aria-hidden="true">✓</div>
-        <p>Check your inbox. Your report is on its way.</p>
-      </div>
-      <div id="ff2">
-        <form onsubmit="handleSubmit(event,2);return false;" novalidate>
-          <label for="f-email">Email Address</label>
-          <input type="email" id="f-email" name="email" placeholder="you@youragency.com" required autocomplete="email">
-          <div class="err-msg" id="f-email-err" role="alert">Please enter a valid email address.</div>
-
-          <label for="f-city">City or ZIP Code</label>
-          <input type="text" id="f-city" name="city_or_zip" placeholder="Where do you work? (city or ZIP)" required autocomplete="postal-code">
-          <div class="err-msg" id="f-city-err" role="alert">Please enter your city or ZIP code.</div>
-
-          <button class="btn" id="btn2" type="submit">
-            Send My Free Market Report
-            <span class="btn-sub">Free. No credit card. Researched for your market.</span>
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ─── SECTION 11: FOOTER ────────────────────────────────── -->
 <footer class="footer">
-  <div class="wrap-sm">
-    <p><strong style="color:#e8eaed;font-size:16px">ProducerPath</strong></p>
-    <p style="margin-top:8px">
-      <a href="#">Privacy Policy</a> · <a href="#">Terms</a> · <a href="mailto:hello@producerpathins.com">Contact</a>
+  <div class="wrap">
+    <p><strong>ProducerPath</strong></p>
+    <p>&copy; 2026 ProducerPath. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Contact</a></p>
+    <p style="margin-top:14px;max-width:600px;margin-left:auto;margin-right:auto;opacity:.7">
+      ProducerPath is an independent marketing system for insurance professionals and is not affiliated with any carrier. Event details are researched from public sources; confirm costs and availability with organizers. Results vary by market and effort.
     </p>
-    <p style="margin-top:16px;max-width:620px;margin-left:auto;margin-right:auto;opacity:.75">
-      ProducerPath is an independent marketing system for insurance professionals and is not affiliated with any carrier. Market opportunity data is researched from public sources. Confirm details with local contacts before committing. Results vary by market and effort.
-    </p>
-    <p style="margin-top:10px;opacity:.6">© 2026 ProducerPath. All Rights Reserved.</p>
   </div>
 </footer>
-
-<script>
-/* ── FORM SUBMISSION ── */
-function handleSubmit(event, formNum) {
-  event.preventDefault();
-
-  var isHero  = formNum === 1;
-  var emailEl = document.getElementById(isHero ? 'h-email'     : 'f-email');
-  var cityEl  = document.getElementById(isHero ? 'h-city'      : 'f-city');
-  var emailEr = document.getElementById(isHero ? 'h-email-err' : 'f-email-err');
-  var cityEr  = document.getElementById(isHero ? 'h-city-err'  : 'f-city-err');
-  var btn     = document.getElementById('btn' + formNum);
-  var fsEl    = document.getElementById('fs'  + formNum);
-  var ffEl    = document.getElementById('ff'  + formNum);
-
-  /* Clear previous errors */
-  emailEl.classList.remove('field-err');
-  cityEl.classList.remove('field-err');
-  emailEr.classList.remove('show');
-  cityEr.classList.remove('show');
-
-  var emailVal = emailEl.value.trim();
-  var cityVal  = cityEl.value.trim();
-  var valid    = true;
-
-  if (!emailVal || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
-    emailEl.classList.add('field-err');
-    emailEr.classList.add('show');
-    emailEl.focus();
-    valid = false;
-  }
-  if (!cityVal) {
-    cityEl.classList.add('field-err');
-    cityEr.classList.add('show');
-    if (valid) cityEl.focus();
-    valid = false;
-  }
-  if (!valid) return;
-
-  btn.disabled    = true;
-  btn.textContent = 'Sending...';
-
-  var data = new FormData();
-  data.append('email',       emailVal);
-  data.append('city_or_zip', cityVal);
-
-  fetch(FORM_ENDPOINT, {
-    method:  'POST',
-    body:    data,
-    headers: { 'Accept': 'application/json' }
-  })
-  .then(function(res) {
-    if (res.ok) {
-      onFormSubmitted();
-      ffEl.style.display = 'none';
-      fsEl.style.display = 'block';
-      setTimeout(function() { window.location.href = '/thankyou.html'; }, 1800);
-    } else {
-      btn.disabled    = false;
-      btn.textContent = 'Something went wrong. Try again.';
-    }
-  })
-  .catch(function() {
-    btn.disabled    = false;
-    btn.textContent = 'Something went wrong. Try again.';
-  });
-}
-
-/* ── MIDDLE CTA: scroll hero form into view and focus email field ── */
-function scrollToForm() {
-  var el = document.getElementById('h-email');
-  el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-  setTimeout(function() { el.focus(); }, 500);
-}
-</script>
 </body>
 </html>
